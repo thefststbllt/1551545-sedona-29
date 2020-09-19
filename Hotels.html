@@ -1,108 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-
-  <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="blank.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Инфраструктура:</h1>
-     <ul>
-       <li>Бассеин</li>
-       <li>Парковка</li>
-       <li>Wi-Fi</li>
-     </ul>
-   </section>
-    <section>
-      <h1>Тип жилья:</h1>
-       <ul>
-         <li>Гостиница</li>
-         <li>Мотель</li>
-         <li>Апартаменты</li>
-       </ul>
-      <div>
-        <h1>Стоимость в сутки(Р):</h1>
-        <p><input placeholder="от 0" size="">
-           <input placeholder="до 3000" size="">
-        </p>
-        <button>Показать</button>
-      </div>
-    </section>
-    <section>
-      <h2>Найдено:3</h2>
-       <p>Сортировка:</p>
-       <p><button disabled>По цене</button></p>
-       <p><button>По типу</button></p>
-       <p><button>По рейтингу</button></p>
-      <div>
-        <button>▲</button>
-        <button disabled>▼</button>
-      </div>
-    </section>
-    <section>
-     <img src="amara_resort&spa.png">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="blank.html">Информация</a>
+      </li>
+      <li>
+        <a href="blank.html">Фото и видео</a>
+      </li>
+      <li>
+        <a href="blank.html">Карта штата</a>
+      </li>
+      <li>
+        <a href="blank.html">Гостиницы</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <form>
+      <p><b>Инфраструктура:</b></p>
+      <p><input type="checkbox" checked>
+        <label>Бассеин</label>
+      </p>
+      <p><input type="checkbox">
+        <label>Парковка</label>
+      </p>
+      <p><input type="checkbox">
+        <label>Wi-Fi</label>
+      </p>
+    </form>
+    <form>
+      <p>
+        <b>Тип жилья:</b>
+      </p>
+      <p>
+        <input type="checkbox" checked>
+        <label>Гостиница</label>
+      </p>
+      <p>
+        <input type="checkbox" checked>
+        <label>Мотель</label>
+      </p>
+      <p>
+        <input type="checkbox" checked>
+        <label>Апартаменты</label>
+      </p>
+    </form>
+    <form action="https://echo.htmlacademy.ru/">
+      <p>
+        <b>Стоимость в сутки(Р):</b>
+      </p>
+      <p>
+        <input type="text" placeholder="от 0" size="">
+        <input type="text" placeholder="до 3000" size="">
+      </p>
+      <!--Ползунок выбора стоимости-->
+      <input type="submit" value="Показать">
+    </form>
+    <div>
+      <b>Найдено:3</b>
+      <p>Сортировка:</p>
+      <p>
+        <a href="#">По цене</a>
+      </p>
+      <p>
+        <a href="#">По типу</a>
+      </p>
+      <p>
+        <a href="#">По рейтингу</a>
+      </p>
+    </div>
+    <div>
+      <img src="arrow-up gray"><!--стрелочка вверх-->
+      <img src="arrow-down light-blue"><!--стрелочка вниз-->
+    </div>
+  </section>
+  <ul>
+    <li>
+      <img src="amara_resort&spa.png" alt="Amara Resort & SPA" height="" width="">
       <h1>Amara Resort & SPA</h1>
       <p>Гостиница от 4000 Р.</p>
-        <button>Подробнее</button>
-        <button>Забронировать</button>
+      <a href="#">Подробнее</a>
+      <button>Забронировать</button>
       <div>
-        <p>★★★★</p>
-        <output>Рейтинг:8,5</output>
+        <img src="4 stars.svg" alt="stars" height="" width=""><!--★★★★-->
+        <p>Рейтинг:8,5</p>
       </div>
-    </section>
-    <section>
-      <img src="desert_quail_inn.png">
+    </li>
+    <li>
+      <img src="desert_quail_inn.png" alt="Desert Quail INN" height="" width="">
       <h1>Desert Quail INN</h1>
       <p>Мотель от 3000 Р.</p>
-      <button>Подробнее</button>
+      <a href="#">Подробнее</a>
       <button>Забронировать</button>
       <div>
-        <p>★★★</p>
-        <output>Рейтинг:8,9</output>
+        <img src="3 stars.svg" alt="stars" height="" width=""><!--★★★-->
+        <p>Рейтинг:8,9</p>
       </div>
-    </section>
-    <section>
-      <img src="villas_at_poco_diablo.png">
+    </li>
+    <li>
+      <img src="villas_at_poco_diablo.png" alt="Villas At Poco Diablo" height="" width="">
       <h1>Villas At Poco Diablo</h1>
       <p>Апартаменты от 2000 Р.</p>
-      <button>Подробнее</button>
+      <a href="#">Подробнее</a>
       <button>Забронировать</button>
       <div>
-        <p>★★</p>
-        <output>Рейтинг:9,2</output>
+        <img src="2 stars.svg" alt="stars" height="" width=""><!--★★-->
+        <p>Рейтинг:9,2</p>
       </div>
-    </section>
-  </main>
-  <footer>
-    <section>
-      <h3>Контактная информация</h3>
-      <p>#VISITSEDONA<br>
-        ТЕЛ:+7(495)666-01-66
-      </p>
-    </section>
-    <section>
-      <ul>
-        <li><button><a href="twitter.com">Twitter</a></button></li>
-        <li><button><a href="facebook.com">Facebook</a></button></li>
-        <li><button><a href="youtube.com">YouTube</a></button></li>
-      </ul>
-    </section>
-    <div> Website by
-      <a href="https://htmlacademy.ru">HTML Academy</a>
-    </div>
-  </footer>
-  </body>
+    </li>
+  </ul>
+</main>
+<footer>
+  <section>
+    <p>#VISITSEDONA
+      <a href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
+    </p>
+  </section>
+  <section>
+    <ul>
+      <li>
+        <a href="twitter.com">Twitter</a>
+      </li>
+      <li>
+        <a href="facebook.com">Facebook</a>
+      </li>
+      <li>
+        <a href="youtube.com">YouTube</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <img src="website_by_html_academy.svg">
+  </section>
+</footer>
+</body>
 </html>
