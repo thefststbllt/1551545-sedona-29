@@ -1,0 +1,187 @@
+/* pt-sans-400(regular) */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ptsans.woff');
+  src: local('PT Sans'), local('PTSans-Regular');
+  url('../fonts/ptsans.woff2') format('woff2'); /* Super Modern Browsers */
+  url('../fonts/ptsans.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+/* pt-sans-700(bold) */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ptsansbold.woff');
+  src: local('PT Sans Bold'), local('PTSans-Bold');
+  url('../fonts/ptsansbold.woff2') format('woff2'); /* Super Modern Browsers */
+  url('../fonts/ptsansbold.woff') format('woff'); /* Modern Browsers */
+}
+
+/*Кастомные свойства*/
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-gray: #888888;
+  --basic-lightgray: #EEEEEE;
+  /*Basic colors*/
+  --lightblue: #81B3D2;
+  --popup-gray: #F2F2F2;
+  /*button colors*/
+  --brown-static: #766357;
+  --brown-active: #604E43;
+  --brown-pushed: #503E33;
+  --blue-static: #81B3D2;
+  --blue-active: #669EC0;
+  --blue-pushed: #5496BD;
+  --footer-basic: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-white);
+  background-image: url("../img/background_photo.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background: var(--basic-white);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/*Навигация сайта*/
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-white);
+}
+
+.main-reason h1 {
+  background: var(--basic-white);
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons {
+  background: var(--basic-white);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.features {
+
+}
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  width: 400px;
+  height: 256px;
+  background: var(--lightblue);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.feature-item12 {
+  background-color: var(--blue-static);
+}
+
+.feature-item12 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.feature-item12 p {
+  color: var(--basic-white);
+  font-weight: normal;
+}
+
+.last-feature {
+  color: var(--basic-black);
+  background-color: var(--basic-lightgray);
+  font-weight: normal;
+}
+
+.feature-bonuslist {
+  list-style: none;
+  background: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.feature-bonuslist h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.bonus-feature {
+  color: var(--basic-black);
+  font-weight: normal;
+}
+
+.searching-block p {
+  font-weight: normal;
+}
+
+.searching-block a {
+  color: var(--basic-white);
+  background-color: var(--brown-static);
+}
+
+.searching-block a:hover,
+.searching-block a:focus {
+  background-color: var(--brown-active);
+}
+
+.contact-phone {
+  color: var(--basic-black);
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+.social-buttons a {
+  color: var(--basic-white);
+  background-color: var(--blue-static);
+}
+
+.social-buttons a:hover,
+.social-buttons a:focus {
+  color: var(--basic-white);
+  background-color: var(--blue-active);
+}
+
+.page-footer {
+  background: var(--footer-basic);
+}

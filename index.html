@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header>
-  <nav>
-    <ul>
+<body class="page-body">
+<header class="main-header">
+  <div class="main-navigation">
+    <ul class="site-navigation">
       <li>
         <a href="index.html">Информация</a>
       </li>
       <li>
         <a href="">Фото и видео</a>
+      </li>
+      <li>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo" alt="logo" width="138px" height="70px"><!--LOGO-->
+        </a>
       </li>
       <li>
         <a href="">Карта штата</a>
@@ -21,9 +29,9 @@
         <a href="hotels.html">Гостиницы</a>
       </li>
     </ul>
+  </div>
   </nav>
   <section>
-    <img src="img/background_view_of_sedona.jpg" alt="welcome to sedona" height="" width="">
     <div>
       <img src="img/welcome.svg" alt="" height="" width=""><!--Welcome-->
       <img src="img/gorgeous.svg" alt="" height="" width=""><!--to the gorgeous-->
@@ -32,28 +40,30 @@
     </div>
   </section>
 </header>
-<main>
-  <section>
+<main class="wrapper">
+  <section class="main-reason">
     <h1>
       Седона - небольшой городок в Аризоне,
       заслуживающий большего!
     </h1>
   </section>
-  <section>
-    <h2>
+  <section class="features">
+    <h2 class="reasons">
       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
     </h2>
-    <ul>
-      <li>
-        <h3>Настоящий городок</h3>
-        <p>-№1-</p>
-        <p>
-          Седона - не атракцион для туристов, там
-          течёт своя жизнь
-        </p>
+    <ul class="feature-list">
+      <li class="feature">
+        <div class="feature-item12">
+          <h3 class="header">Настоящий городок</h3>
+          <p>-№1-</p>
+          <p>
+            Седона - не атракцион для туристов, там
+            течёт своя жизнь
+          </p>
+        </div>
         <img src="img/the_view_of_sedona.jpg" alt="вид седоны" height="" width="">
-        <ul>
-          <li>
+        <ul class="feature-bonuslist">
+          <li class="bonus-feature">
             <img src="img/house-icon.svg" alt="жильё" height="" width="">
             <h4>Жильё</h4>
             <p>
@@ -61,7 +71,7 @@
               мотеле, всё как в кино!
             </p>
           </li>
-          <li>
+          <li class="bonus-feature">
             <img src="img/burger-icon.svg" alt="еда" height="" width="">
             <h4>Еда</h4>
             <p>
@@ -69,7 +79,7 @@
               вы не разочаруетесь!
             </p>
           </li>
-          <li>
+          <li class="bonus-feature">
             <img src="img/giftbox-icon.svg" alt="сувениры" height="" width="">
             <h4>Сувениры</h4>
             <p>
@@ -79,16 +89,18 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li class="feature">
         <img src="img/the_devil's_bridge_view.jpg" alt="вид на мост дьявола" height="" width="">
-        <h3>Там есть мост дьявола</h3>
-        <p>-№2-</p>
-        <p>
-          Да, по нему можно пройти! Если конечно
-          вы осмелитесь
-        </p>
+        <div class="feature-item12">
+          <h3>Там есть мост дьявола</h3>
+          <p>-№2-</p>
+          <p>
+            Да, по нему можно пройти! Если конечно
+            вы осмелитесь
+          </p>
+        </div>
       </li>
-      <li>
+      <li class="last-feature">
         <h3>Небольшая площадь</h3>
         <p>-№3-</p>
         <p>
@@ -96,7 +108,7 @@
           находятся очень близко
         </p>
       </li>
-      <li>
+      <li class="last-feature">
         <h3>Красивая дорога</h3>
         <p>-№4-</p>
         <p>
@@ -104,7 +116,7 @@
           не скучно!
         </p>
       </li>
-      <li>
+      <li class="last-feature">
         <h3>Мало туристов</h3>
         <p>-№5-</p>
         <p>
@@ -114,41 +126,45 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="searching-block">
     <h1>Заинтересовались?</h1>
     <p>
       Укажите предполагаемые даты поездки,
       и мы покажем вам лучшие предложения гостиниц в Седоне
     </p>
-    <a href=""><b>Поиск гостиницы в Седоне</b></a>
+    <a class="button button-search" href="">
+      <b>Поиск гостиницы в Седоне</b>
+    </a>
   </section>
-  <section>
+  <section class="map">
     <map>MAP</map>
   </section>
 </main>
-<footer>
-  <section>
+<footer class="page-footer main-footer">
+  <section class="footer-contacts">
     <p>
       #VISITSEDONA
-      <a href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
+      <a class="contact-phone" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
     </p>
   </section>
-  <section>
-    <ul>
+  <section class="footer-social">
+    <ul class="social-buttons">
       <li>
-        <a href="twitter.com">Twitter</a>
+        <a class="button" href="https://www.twitter.com">Twitter</a>
       </li>
       <li>
-        <a href="facebook.com">Facebook</a>
+        <a class="button" href="https://www.facebook.com">Facebook</a>
       </li>
       <li>
-        <a href="youtube.com">YouTube</a>
+        <a class="button" href="https://www.youtube.com">YouTube</a>
       </li>
     </ul>
   </section>
-  <section>
+  <section class="copyright">
     <p>website by</p>
-    <img src="img/logo-htmlacademy.svg">
+    <a class="hmlacademy" href="https://www.htmlacademy.ru">
+      <img src="img/logo-htmlacademy.svg">
+    </a>
   </section>
 </footer>
 </body>
