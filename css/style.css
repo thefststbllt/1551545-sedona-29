@@ -18,26 +18,26 @@
   src: local('PT Sans Bold'), local('PTSans-Bold');
   url('../fonts/ptsansbold.woff2') format('woff2'); /* Super Modern Browsers */
   url('../fonts/ptsansbold.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
 }
 
 /*Кастомные свойства*/
 
 :root {
+  /*Basic colors*/
   --basic-white: #FFFFFF;
   --basic-black: #000000;
   --basic-gray: #888888;
   --basic-lightgray: #EEEEEE;
-  /*Basic colors*/
   --lightblue: #81B3D2;
   --popup-gray: #F2F2F2;
   /*button colors*/
   --brown-static: #766357;
-  --brown-active: #604E43;
-  --brown-pushed: #503E33;
+  --brown-hover: #604E43;
+  --brown-active: #503E33;
   --blue-static: #81B3D2;
-  --blue-active: #669EC0;
-  --blue-pushed: #5496BD;
-  --footer-basic: rgba(255, 255, 255, 0.9);
+  --blue-hover: #669EC0;
+  --blue-active: #5496BD;
 }
 
 body {
@@ -95,33 +95,21 @@ a {
   line-height: 26px;
 }
 
-.features {
-
-}
 .feature-list {
   list-style: none;
 }
 
-.feature-item {
-  width: 400px;
-  height: 256px;
-  background: var(--lightblue);
-  color: var(--basic-white);
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-}
-.feature-item12 {
+.feature-highlighted {
   background-color: var(--blue-static);
 }
 
-.feature-item12 h3 {
+.feature-highlighted h3 {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-white);
 }
 
-.feature-item12 p {
+.feature-highlighted p {
   color: var(--basic-white);
   font-weight: normal;
 }
@@ -132,20 +120,19 @@ a {
   font-weight: normal;
 }
 
-.feature-bonuslist {
+.bonus-list {
   list-style: none;
   background: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
 }
 
-.feature-bonuslist h4 {
+.bonus-list h4 {
   font-size: 21px;
   line-height: 21px;
 }
 
 .bonus-feature {
-  color: var(--basic-black);
   font-weight: normal;
 }
 
@@ -160,15 +147,124 @@ a {
 
 .searching-block a:hover,
 .searching-block a:focus {
+  background-color: var(--brown-hover);
+}
+.searching-block a:active {
   background-color: var(--brown-active);
+}
+
+.selection {
+  color: var(--basic-white);
+}
+
+.selection h1 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.selection p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a .hotels-visited {
+  color: #766357;
+}
+
+.sort-bar b {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-bar p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.sort-bar a {
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--lightblue);
+}
+
+.sort-bar .price {
+  color: var(--lightblue);
+  border: none;
+}
+
+.hotel-card {
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.hotel-card h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-card p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.detailed {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--blue-static);
+}
+
+.detailed:hover,
+.detailed:focus {
+  background-color: var(--blue-hover);
+}
+.detailed:active {
+  background-color: var(--blue-active);
+}
+
+.booking {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--brown-static);
+}
+
+.booking:hover,
+.booking:focus {
+  background-color: var(--brown-hover);
+}
+.booking:active {
+  background-color: var(--brown-active);
+}
+
+.actual-rating {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #F2F2F2 ;
+  width: 110px;
+  height: 27px;
+  padding-top: 5px;
+  margin-left: 1057px;
 }
 
 .contact-phone {
   color: var(--basic-black);
 }
 
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--lightblue);
+}
+
+.contact-phone:active {
+  color: var(--basic-black);
+}
+
 .social-buttons {
   list-style: none;
+  color: var(--basic-white);
 }
 
 .social-buttons a {
@@ -178,10 +274,12 @@ a {
 
 .social-buttons a:hover,
 .social-buttons a:focus {
-  color: var(--basic-white);
+  background-color: var(--blue-hover);
+}
+.social-buttons a:active {
   background-color: var(--blue-active);
 }
 
 .page-footer {
-  background: var(--footer-basic);
+  background: rgba(255, 255, 255, 0.9);
 }
