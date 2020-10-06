@@ -153,6 +153,10 @@ a {
   background-color: var(--brown-active);
 }
 
+.searching-block b:active {
+  opacity: 0.3;
+}
+
 .selection {
   color: var(--basic-white);
 }
@@ -183,13 +187,32 @@ a .hotels-visited {
 }
 
 .sort-bar a {
-  color: var(--basic-black);
+  color: rgba(0,0,0,0.3);
   border-bottom: 1px dashed var(--lightblue);
 }
 
-.sort-bar .price {
+.sorting-by:hover,
+.sorting-by:focus {
+  color: var(--lightblue);
+  opacity: 1;
+}
+.sorting-by:active {
+  color: var(--basic-black);
+  border: none;
+}
+
+.sort-bar .active {
   color: var(--lightblue);
   border: none;
+}
+
+.arrows img:hover,
+.arrows img:focus {
+  color: var(--basic-black);
+}
+
+.arrows img:active {
+  color: var(--lightblue);
 }
 
 .hotel-card {
@@ -208,19 +231,23 @@ a .hotels-visited {
   font-weight: normal;
 }
 
-.detailed {
+.detail {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--blue-static);
 }
 
-.detailed:hover,
-.detailed:focus {
+.detail:hover,
+.detail:focus {
   background-color: var(--blue-hover);
 }
-.detailed:active {
+.detail:active {
   background-color: var(--blue-active);
+}
+
+.detail b:active {
+  opacity: 0.3;
 }
 
 .booking {
@@ -238,7 +265,11 @@ a .hotels-visited {
   background-color: var(--brown-active);
 }
 
-.actual-rating {
+.booking b:active {
+  opacity: 0.3;
+}
+
+.rating {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
@@ -268,8 +299,9 @@ a .hotels-visited {
 }
 
 .social-buttons a {
-  color: var(--basic-white);
   background-color: var(--blue-static);
+  width: 46px;
+  height: 48px;
 }
 
 .social-buttons a:hover,
@@ -278,6 +310,10 @@ a .hotels-visited {
 }
 .social-buttons a:active {
   background-color: var(--blue-active);
+}
+
+.social-buttons img:active {
+  opacity: 0.3;
 }
 
 .page-footer {
