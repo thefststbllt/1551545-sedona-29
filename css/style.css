@@ -40,6 +40,10 @@
   --blue-active: #5496BD;
 }
 
+* {
+  outline: 1px dashed red;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -60,15 +64,40 @@ a {
   text-decoration: none;
 }
 
+/* Grid */
+
+.page {
+  width: 1200px;
+  height: 100%;
+  align-content: start;
+}
+
+/* Main navigation */
+
 .main-navigation {
+
   background: var(--basic-white);
   font-size: 14px;
   line-height: 26px;
+  margin-bottom: 44px;
+}
+
+.main-navigation-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header-logo {
+  justify-self: center;
 }
 
 /*Навигация сайта*/
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 15px 0;
   list-style: none;
 }
 
@@ -96,10 +125,28 @@ a {
 }
 
 .feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-self: center;
+}
+
+.main-feature {
   list-style: none;
 }
 
+.feature-list .first {
+  grid-column: 1 / 4;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .feature-highlighted {
+  grid-column: 1 / 2;
+  margin-bottom: 0;
   background-color: var(--blue-static);
 }
 
@@ -114,26 +161,64 @@ a {
   font-weight: normal;
 }
 
+.sedona-view {
+  grid-column: 2 / 3;
+}
+
+.feature-list .second {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.devil-bridge {
+  grid-column: 1 / 2;
+}
+
+.second .feature-highlighted {
+  grid-column: 2 / 3;
+}
+
 .last-feature {
+  margin: 0;
   color: var(--basic-black);
   background-color: var(--basic-lightgray);
   font-weight: normal;
 }
 
+.feature-list .third {
+  grid-column: 1 / 2;
+}
+
+.feature-list .fourth {
+  grid-column: 2 / 3;
+}
+
+.feature-list .fifth {
+  grid-column: 3 / 4;
+}
+
 .bonus-list {
+  grid-column: 1 / 3;
   list-style: none;
   background: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bonus-list h4 {
   font-size: 21px;
   line-height: 21px;
+
 }
 
 .bonus-feature {
+  margin: 0;
   font-weight: normal;
+  padding-top: 0;
 }
 
 .searching-block p {
@@ -155,6 +240,44 @@ a {
 
 .searching-block b:active {
   opacity: 0.3;
+}
+
+.main-sorting {
+  display: grid;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.filter .infrustructure {
+  grid-column: 1 / 2;
+}
+
+.filter .appartment-type {
+  grid-column: 2 / 3;
+}
+
+.filter .cost {
+  grid-column: 3 / 4;
+}
+
+.sort-stripe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--basic-white);
+  margin: 0;
+}
+
+.sort-bar {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.arrows {
+  grid-column: 4 / 5;
 }
 
 .selection {
@@ -215,6 +338,28 @@ a .hotels-visited {
   color: var(--lightblue);
 }
 
+.hotel-content {
+  display: grid;
+  padding: 0;
+  width: 1200px;
+
+}
+
+.hotel-content .first {
+  display: grid;
+  grid-template-columns: 1fr max-content 2fr;
+}
+
+.hotel-content .second {
+  display: grid;
+  grid-template-columns: 1fr max-content 2fr;
+}
+
+.hotel-content .third {
+  display: grid;
+  grid-template-columns: 1fr max-content 2fr;
+}
+
 .hotel-card {
   list-style: none;
   background-color: var(--basic-white);
@@ -229,6 +374,22 @@ a .hotels-visited {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+}
+
+.aside-rating {
+  margin: 0;
+}
+
+.stars {
+
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #F2F2F2 ;
+  width: 110px;
 }
 
 .detail {
@@ -269,17 +430,6 @@ a .hotels-visited {
   opacity: 0.3;
 }
 
-.rating {
-  font-size: 14px;
-  line-height: 21px;
-  color: #666666;
-  background-color: #F2F2F2 ;
-  width: 110px;
-  height: 27px;
-  padding-top: 5px;
-  margin-left: 1057px;
-}
-
 .contact-phone {
   color: var(--basic-black);
 }
@@ -294,14 +444,27 @@ a .hotels-visited {
 }
 
 .social-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   color: var(--basic-white);
 }
 
+.twitter {
+  padding: 16px 14px 15px 15px;
+}
+
+.fb {
+  padding: 13px 17px;
+}
+
+.youtube {
+  padding: 16px 13px;
+}
+
+
 .social-buttons a {
   background-color: var(--blue-static);
-  width: 46px;
-  height: 48px;
 }
 
 .social-buttons a:hover,
@@ -316,6 +479,17 @@ a .hotels-visited {
   opacity: 0.3;
 }
 
+.copyright {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .page-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer {
+
 }
