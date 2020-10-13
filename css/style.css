@@ -72,23 +72,16 @@ a {
   align-content: start;
 }
 
+.page-body {
+  display: grid;
+}
+
 /* Main navigation */
 
 .main-navigation {
-
   background: var(--basic-white);
   font-size: 14px;
   line-height: 26px;
-  margin-bottom: 44px;
-}
-
-.main-navigation-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.main-header-logo {
-  justify-self: center;
 }
 
 /*Навигация сайта*/
@@ -108,6 +101,14 @@ a {
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-white);
+}
+
+.main-header-logo {
+  grid-column: 3 / 4;
+}
+
+.welcome {
+  justify-self: center;
 }
 
 .main-reason h1 {
@@ -130,7 +131,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-self: center;
 }
 
 .main-feature {
@@ -212,13 +212,10 @@ a {
 .bonus-list h4 {
   font-size: 21px;
   line-height: 21px;
-
 }
 
 .bonus-feature {
-  margin: 0;
   font-weight: normal;
-  padding-top: 0;
 }
 
 .searching-block p {
@@ -240,10 +237,6 @@ a {
 
 .searching-block b:active {
   opacity: 0.3;
-}
-
-.main-sorting {
-  display: grid;
 }
 
 .filter {
@@ -339,29 +332,12 @@ a .hotels-visited {
 }
 
 .hotel-content {
-  display: grid;
   padding: 0;
-  width: 1200px;
-
-}
-
-.hotel-content .first {
-  display: grid;
-  grid-template-columns: 1fr max-content 2fr;
-}
-
-.hotel-content .second {
-  display: grid;
-  grid-template-columns: 1fr max-content 2fr;
-}
-
-.hotel-content .third {
-  display: grid;
-  grid-template-columns: 1fr max-content 2fr;
 }
 
 .hotel-card {
-  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
   background-color: var(--basic-white);
 }
 
@@ -374,14 +350,6 @@ a .hotels-visited {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-}
-
-.aside-rating {
-  margin: 0;
-}
-
-.stars {
-
 }
 
 .rating {
@@ -488,8 +456,4 @@ a .hotels-visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background: rgba(255, 255, 255, 0.9);
-}
-
-.main-footer {
-
 }
