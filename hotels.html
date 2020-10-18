@@ -9,29 +9,29 @@
 <body class="page-body">
 <header class="main-header">
   <nav class="main-navigation">
-    <div class="main-header-bar">
-      <ul class="site-navigation">
-        <li>
-          <a href="index.html">Информация</a>
-        </li>
-        <li>
-          <a href="">Фото и видео</a>
-        </li>
-        <li>
-          <!--main-header-logo-plug-->
-        </li>
-        <li>
-          <a href="">Карта штата</a>
-        </li>
-        <li>
-          <a href="hotels.html">Гостиницы</a>
-        </li>
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo-sedona.svg" alt="logo" width="138px" height="70px"><!--LOGO-->
-        </a>
-      </ul>
-    </div>
+    <ul class="site-navigation">
+      <li>
+        <a href="index.html">Информация</a>
+      </li>
+      <li>
+        <a href="">Фото и видео</a>
+      </li>
+      <li>
+        <!--main-header-logo-plug-->
+      </li>
+      <li>
+        <a href="">Карта штата</a>
+      </li>
+      <li>
+        <a href="hotels.html">Гостиницы</a>
+      </li>
+    </ul>
   </nav>
+  <div class="wrapper">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/logo-sedona.svg" alt="logo" width="138px" height="70px"><!--LOGO-->
+    </a>
+  </div>
 </header>
 <main>
   <section>
@@ -106,12 +106,14 @@
       <div class="title">
         <h2>Amara Resort & SPA</h2>
         <p>Гостиница от 4000 Р.</p>
-        <a class="detail" href="">
-          <b>Подробнее</b>
-        </a>
-        <a class="booking" href="">
-          <b>Забронировать</b>
-        </a>
+        <div class="buttons-wrapper">
+          <a class="detail" href="">
+            <b>Подробнее</b>
+          </a>
+          <a class="booking" href="">
+            <b>Забронировать</b>
+          </a>
+        </div>
       </div>
       <div class="aside-rating">
         <div class="stars">
@@ -134,12 +136,14 @@
       <div class="title">
         <h2>Desert Quail INN</h2>
         <p>Мотель от 3000 Р.</p>
-        <a class="detail" href="">
-          <b>Подробнее</b>
-        </a>
-        <a class="booking" href="">
-          <b>Забронировать</b>
-        </a>
+        <div class="buttons-wrapper">
+          <a class="detail" href="">
+            <b>Подробнее</b>
+          </a>
+          <a class="booking" href="">
+            <b>Забронировать</b>
+          </a>
+        </div>
       </div>
       <div class="aside-rating">
         <div class="stars">
@@ -162,12 +166,14 @@
       <div class="title">
         <h2>Villas At Poco Diablo</h2>
         <p>Апартаменты от 2000 Р.</p>
-        <a class="detail" href="">
-          <b>Подробнее</b>
-        </a>
-        <a class="booking" href="">
-          <b>Забронировать</b>
-        </a>
+        <div class="buttons-wrapper">
+          <a class="detail" href="">
+            <b>Подробнее</b>
+          </a>
+          <a class="booking" href="">
+            <b>Забронировать</b>
+          </a>
+        </div>
       </div>
       <div class="aside-rating">
         <div class="stars">
@@ -185,10 +191,10 @@
 </main>
 <footer class="page-footer main-footer">
   <section class="footer-contacts">
-    <p>
-      #VISITSEDONA
+    <div class="wrapper">
+      <p>#VISITSEDONA</p>
       <a class="contact-phone" href="tel:+74956660166">ТЕЛ:+7(495)666-01-66</a>
-    </p>
+    </div>
   </section>
   <section class="footer-social">
     <ul class="social-buttons">
@@ -201,7 +207,6 @@
         <a class="fb" href="https://www.facebook.com">
           <img src="img/icon-fb.svg" alt="icon-fb" height="22" width="12">
         </a>
-
       </li>
       <li>
         <a class="youtube" href="https://www.youtube.com">
@@ -211,10 +216,13 @@
     </ul>
   </section>
   <section class="copyright">
-    <p>website by</p>
-    <a class="hmlacademy" href="https://www.htmlacademy.ru">
-      <img src="img/logo-htmlacademy.svg" alt="logo" width="115px" height="41px">
-    </a>
+    <div class="wrapper">
+      <p>website by</p>
+      <a class="htmlacademy" href="https://www.htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" alt="logo" width="115px" height="41px">
+      </a>
+    </div>
+  </section>
   </section>
 </footer>
 </body>
