@@ -55,7 +55,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: var(--basic-white);
-  background-image: url("../img/background_photo.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -81,65 +80,48 @@ a {
 .main-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.main-header .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .greetings {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../img/background_photo.png")
+}
+
+.welcome {
+  margin: 77px 372px 81px 371px;
 }
 
 .main-navigation {
   background: var(--basic-white);
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.main-navigation .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-header-logo {
-  width: 138px;
-  height: 70px;
+  position: absolute;
+  align-self: center;
 }
 
 /*Навигация сайта*/
 
 .site-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-self: center;
+  padding: 0;
   margin: 0;
-  padding: 15px 0;
   list-style: none;
 }
+.site-navigation li {
+  padding: 15px 72px;
+}
 
-.main-navigation a {
+.site-navigation a {
   color: var(--basic-black);
-  width: 138px;
-  height: 70px;
+
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: var(--basic-white);
-}
-
-.welcome {
-
-}
-
-.main-reason h1 {
-  margin:0;
 }
 
 .main-reason h1 {
@@ -154,7 +136,6 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  margin: 0;
 }
 
 .feature-list {
@@ -253,7 +234,6 @@ a {
 .searching-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -269,9 +249,7 @@ a {
 .searching-block a {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 568px;
-  height: 86px;
   font-size: 21px;
   color: var(--basic-white);
   background-color: var(--brown-static);
@@ -292,6 +270,8 @@ a {
 .filter {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
+  background-image: url("../img/background.jpg")
+
 }
 
 .filter .infrustructure {
@@ -396,7 +376,7 @@ a .hotels-visited {
 
 .hotel-card {
   display: grid;
-  grid-template-columns: max-content max-content 1fr;
+  grid-template-columns: 237px 763px 200px;
   background-color: var(--basic-white);
   border-bottom: 1px solid #E5E5E5;
 }
@@ -414,6 +394,14 @@ a .hotels-visited {
 
 .hotel-card .title {
   padding-bottom: 30px;
+}
+
+.title h2 {
+  width: 240px;
+}
+
+.type-n-price {
+  display: flex;
 }
 
 .picture {
@@ -454,9 +442,7 @@ a .hotels-visited {
 .detail {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 110px;
-  height: 27px;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
@@ -478,9 +464,7 @@ a .hotels-visited {
 .booking {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 142px;
-  height: 27px;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
@@ -503,21 +487,14 @@ a .hotels-visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background: rgba(255, 255, 255, 0.9);
-  padding: 23px;
+  padding: 36px 106px;
 }
 
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-contacts .wrapper {
   width: 251px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -547,7 +524,7 @@ a .hotels-visited {
 }
 
 .social-buttons {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   width: 156px;
   display: flex;
@@ -561,7 +538,6 @@ a .hotels-visited {
 .social-buttons a {
   background-color: var(--blue-static);
   width: 46px;
-  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,18 +556,9 @@ a .hotels-visited {
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright .wrapper {
   width: 197px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.htmlacademy {
-  height: 41px;
+  margin-left: 90px;
 }
