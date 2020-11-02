@@ -204,7 +204,7 @@ a {
   grid-column: 1 / 2;
   margin-bottom: 0;
   background-color: var(--blue-static);
-  padding: 47px 51px 54px 52px;
+  padding: 47px 49px 54px 49px;
 }
 
 .feature-highlighted h3 {
@@ -222,7 +222,7 @@ a {
 }
 
 .feature-highlighted .number {
-  margin:0 123px 25px 123px;
+  margin:0 100px 25px 100px;
 }
 
 .sedona-view {
@@ -241,11 +241,11 @@ a {
 
 .second .feature-highlighted {
   grid-column: 2 / 3;
-  padding: 50px 49px 51px 50px;
+  padding: 50px 49px 51px 49px;
 }
 
 .second h3 {
-  margin: 0 76px 25px 76px;
+  margin: 0 70px 25px 70px;
 }
 
 .last-feature {
@@ -277,14 +277,14 @@ a {
 
 .feature-list .third {
   grid-column: 1 / 2;
-  padding-left: 97px;
+  padding-left: 96px;
   padding-right: 96px;
 }
 
 .feature-list .fourth {
   grid-column: 2 / 3;
-  padding-left: 72px;
-  padding-right: 71px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .fourth h3 {
@@ -333,7 +333,7 @@ a {
 }
 
 .bonus-list li:nth-child(3) {
-  padding: 55px 65px 81px 66px;
+  padding: 55px 65px 81px 65px;
 }
 
 .bonus-feature h4 {
@@ -347,6 +347,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding: 58px 383px 78px 382px;
   background-color: var(--basic-white);
 }
@@ -394,7 +395,7 @@ a {
 
 .whole-pop-up {
   position: absolute;
-  top: 2083px;
+  top: 205px;
 }
 
 .pop-up {
@@ -914,6 +915,7 @@ a .hotels-visited {
 
 .picture img {
   align-self: baseline;
+  object-fit: contain;
 }
 
 .aside-rating {
@@ -921,9 +923,7 @@ a .hotels-visited {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 29px;
-  padding-right: 71px;
-  padding-bottom: 30px;
+  padding: 29px 71px 30px 0px;
 }
 
 .stars {
@@ -1002,6 +1002,10 @@ a .hotels-visited {
 .map {
   align-content: end;
   height: 594px;
+}
+
+.map img {
+  display: block;
 }
 
 .main-footer {

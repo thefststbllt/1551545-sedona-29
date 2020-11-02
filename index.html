@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
 <header class="main-header">
@@ -14,10 +14,10 @@
         <a href="">Информация</a>
       </li>
       <li class="photo-n-video">
-        <a href="">Фото и видео</a>
+        <a href="">Фото&nbsp;и&nbsp;видео</a>
       </li>
       <li class="state-map">
-        <a href="">Карта штата</a>
+        <a href="">Карта&nbsp;штата</a>
       </li>
       <li class="hotels">
         <a href="hotels.html">Гостиницы</a>
@@ -81,7 +81,7 @@
       <li class="main-feature second">
         <img class="devil-bridge" src="img/devil-bridge.jpg" alt="вид на мост дьявола" width="800px" height="256px">
         <div class="feature-highlighted">
-          <h3>Там есть мост дьявола</h3>
+          <h3>Там есть<br>мост дьявола</h3>
           <p class="number">— №2 —</p>
           <p>
             Да, по нему можно пройти! Если конечно
@@ -155,8 +155,13 @@
     </div>
   </section>
   <section class="map">
-    <img src="img/map.png" alt="map" width="1199px" height="593px">
-    <!--<map></map>-->
+    <!--<img src="img/map.png" width="1199px" height="593px" alt="map">-->
+    <map>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486807.6361655306!2d-112.04009329266346!3d34.83449607893822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1604348601240!5m2!1sru!2sru"
+        width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" title="Седона, Аризона, США"
+        tabindex="0"></iframe>
+    </map>
   </section>
 </main>
 <footer class="main-footer page-footer">
