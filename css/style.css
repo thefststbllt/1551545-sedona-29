@@ -77,6 +77,7 @@ a {
 
 .page-body {
   display: grid;
+  position: relative;
 }
 
 /* Main navigation */
@@ -106,6 +107,10 @@ a {
 .main-header-logo {
   position: absolute;
   align-self: center;
+}
+
+.main-header-logo img {
+  display: block;
 }
 
 /*Навигация сайта*/
@@ -537,6 +542,10 @@ a {
   background-color: var(--blue-active);
 }
 
+.pop-up ::placeholder {
+  color: var(--basic-black);
+}
+
 /* Фильтр */
 
 .visually-hidden {
@@ -626,7 +635,7 @@ a {
 
 .appartment-type {
   text-align: start;
-  padding-left: 72px;
+  padding-left: 70px;
 }
 
 .appartment-type h1 {
@@ -635,7 +644,7 @@ a {
 
 .appartment-type p {
   margin-bottom: 25px;
-  padding-left: 42px;
+  padding-left: 43px;
 }
 
 .appartment-type p:nth-child(3) {
@@ -711,7 +720,8 @@ a {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  padding: 5px 35px 6px 36px;
+  padding: 5px 36px 6px 35px;
+  margin-right: 10px;
   cursor: pointer;
 
 }
@@ -727,24 +737,29 @@ a {
   grid-template-columns: 154px 5px 154px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  margin-top: 11px;
 }
 
 .price-controls label {
   font-weight: normal;
 }
 
-.price-controls .min-price {
-}
-
 .price-controls input {
-  width: 60px;
+  width: 130px;
   padding: 0;
-  margin-left: 2px;
+  margin-top: 8px;
+  margin-left: 4px;
   color: var(--basic-white);
   border: none;
   background: rgba(0,0,0,0);
   font-family: inherit;
   font-size: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price-controls ::placeholder {
+  color: var(--basic-white);
 }
 
 .separator {
@@ -753,8 +768,6 @@ a {
   background-color: var(--basic-white);
   margin: 5px 0 5px 3px;
 }
-
-/**/
 
 .sort-stripe {
   display: grid;
@@ -875,11 +888,10 @@ a .hotels-visited {
 }
 
 .hotel-card .title {
-  padding: 24px 0 30px 0;
+  padding: 25px 0 30px 0;
 }
 
 .title h2 {
-  width: 240px;
   margin: 0;
 }
 
@@ -890,7 +902,7 @@ a .hotels-visited {
 .type-n-price p {
   width: 116px;
   text-align: start;
-  margin: 7px 0 15px 0;
+  margin: 6px 0 15px 0;
 }
 
 .hotel-card .picture {
@@ -910,8 +922,17 @@ a .hotels-visited {
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 29px;
-  padding-right: 73px;
+  padding-right: 71px;
   padding-bottom: 30px;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stars img {
+  margin-left: 5px;
 }
 
 .rating {
@@ -1104,7 +1125,7 @@ a .hotels-visited {
 .htmlacademy {
   width: 115px;
   height: 41px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   background-image: url("../img/logo-htmlacademy.svg");
   background-size: 115px 41px;
   background-repeat: no-repeat;
