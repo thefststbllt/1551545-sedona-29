@@ -4,33 +4,33 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body>
 <header class="main-header">
-  <nav class="main-navigation">
+  <nav class="main-navigation-wrapper">
     <ul class="site-navigation">
-      <li class="information">
+      <li>
         <a href="">Информация</a>
       </li>
-      <li class="photo-n-video">
-        <a href="">Фото&nbsp;и&nbsp;видео</a>
+      <li>
+        <a href="">Фото и видео</a>
       </li>
-      <li class="state-map">
-        <a href="">Карта&nbsp;штата</a>
+      <li>
+        <a href="">Карта штата</a>
       </li>
-      <li class="hotels">
+      <li>
         <a href="hotels.html">Гостиницы</a>
       </li>
     </ul>
   </nav>
   <a class="main-header-logo">
-    <img src="img/logo-sedona.svg" alt="logo" width="138px" height="70px"><!--LOGO-->
+    <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="138px" height="70px"><!--LOGO-->
   </a>
 </header>
 <main class="wrapper">
   <div class="greetings">
-    <img class="welcome" src="img/welcome.svg" alt="welcome" width="456.65px" height="350.88px">
+    <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona" width="456.65px" height="350.88px">
   </div>
   <h1 class="main-reason">
     Седона — небольшой городок в Аризоне,
@@ -52,24 +52,21 @@
         </div>
         <img class="sedona-view" src="img/sedona-view.jpg" alt="вид седоны" width="800px" height="256px">
         <ul class="bonus-list">
-          <li class="bonus-feature">
-            <img src="img/icon-house.svg" alt="жильё" width="75px" height="72px">
+          <li class="bonus-feature housing">
             <h4>Жильё</h4>
             <p>
               Рекомендуем пожить в настоящем
               мотеле, всё как в кино!
             </p>
           </li>
-          <li class="bonus-feature">
-            <img class="sandwich" src="img/icon-burger.svg" alt="еда" width="75px" height="70px">
+          <li class="bonus-feature food">
             <h4>Еда</h4>
             <p>
               Всегда заказывайте фирменный бургер,
               вы не разочаруетесь!
             </p>
           </li>
-          <li class="bonus-feature">
-            <img src="img/icon-giftbox.svg" alt="сувениры" width="64px" height="77px">
+          <li class="bonus-feature souvenirs">
             <h4>Сувениры</h4>
             <p>
               Не только китайского, но и местного
@@ -130,22 +127,22 @@
       <form class="pop-up">
         <label class="arrival-date"><p>Дата заезда:</p>
           <input class="date" name="date" placeholder="24 Апреля 2017">
-          <div class="calendar"></div>
+          <button class="calendar"></button>
         </label>
         <label class="departure-date"><p>Дата выезда:</p>
           <input class="date" name="date" placeholder="4 Июля 2017">
-          <div class="calendar"></div>
+          <button class="calendar"></button>
         </label>
         <div class="folks">
           <label><p>Взрослые:</p>
-            <div class="minus"></div>
-            <input placeholder="2">
-            <div class="plus"></div>
+            <button class="minus"></button>
+            <input class="amount" name="amount" placeholder="2">
+            <button class="plus"></button>
           </label>
           <label class="children"><p>Дети:</p>
-            <div class="minus"></div>
-            <input placeholder="0">
-            <div class="plus"></div>
+            <button class="minus"></button>
+            <input class="amount" placeholder="0">
+            <button class="plus"></button>
           </label>
         </div>
         <div>
@@ -172,15 +169,15 @@
   <section class="footer-social">
     <ul class="social-buttons">
       <li>
-        <a class="twitter" href="https://www.twitter.com">
+        <a class="twitter" href="https://www.twitter.com" aria-label="Твиттер">
         </a>
       </li>
       <li>
-        <a class="fb" href="https://www.facebook.com">
+        <a class="fb" href="https://www.facebook.com" aria-label="Фейсбук">
         </a>
       </li>
       <li>
-        <a class="youtube" href="https://www.youtube.com">
+        <a class="youtube" href="https://www.youtube.com" aria-label="Ютуб">
         </a>
       </li>
     </ul>
