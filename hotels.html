@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="main-header">
@@ -25,14 +25,14 @@
     </ul>
   </nav>
   <a class="main-header-logo" href="index.html">
-    <img src="img/logo-sedona.svg" alt="logo" width="138px" height="70px"><!--LOGO-->
+    <img src="img/logo-sedona.svg" alt="logo" width="138" height="70">
   </a>
 </header>
 <main>
   <section>
     <form class="filter">
-      <div class="selection infrustructure">
-        <h1>Инфраструктура:</h1>
+      <div class="selection">
+        <h3>Инфраструктура:</h3>
         <p class="filter-option filter-checkbox">
           <input class="visually-hidden filter-input-checkbox" id="filter-for-pool" type="checkbox" checked>
           <label for="filter-for-pool">Бассеин</label>
@@ -46,8 +46,8 @@
           <label for="filter-for-wifi">Wi-Fi</label>
         </p>
       </div>
-      <div class="selection appartment-type">
-        <h1>Тип&nbsp;жилья:</h1>
+      <div class="selection">
+        <h3>Тип жилья:</h3>
         <p class="filter-option filter-checkbox">
           <input class="visually-hidden filter-input-checkbox" id="filter-for-hotel" type="checkbox" checked>
           <label for="filter-for-hotel">Гостиница</label>
@@ -61,9 +61,8 @@
           <label for="filter-for-appartment">Апартаменты</label>
         </p>
       </div>
-      <div class="selection cost" action="https://echo.htmlacademy.ru/">
-        <div class="container">
-            <legend>Стоимость в сутки (Р):</legend>
+      <div class="selection cost">
+          <h3>Стоимость в сутки (Р):</h3>
           <div class="price-controls">
             <label class="min-price">
               <input class="price-input" name="min-price" placeholder="от 0">
@@ -75,9 +74,7 @@
           </div>
           <div class="range-controls">
             <div class="scale">
-              <div class="bar" style="
-                width: 83%;
-                margin-left: 0">
+              <div class="bar">
               </div>
             </div>
             <div class="toggle toggle-min" tabindex="0" style="
@@ -88,7 +85,6 @@
             </div>
           </div>
           <button type="submit" class="filter-button">Показать</button>
-        </div>
       </div>
     </form>
     <div class="sort-stripe">
@@ -122,7 +118,7 @@
   <ul class="hotel-content">
     <li class="hotel-card">
       <div class="picture">
-        <img src="img/list-amararesortandspa.png" alt="Вид гостиницы Amara Resort & SPA" width="135px" height="90px">
+        <img src="img/list-amararesortandspa.png" alt="Вид гостиницы Amara Resort & SPA" width="135" height="90">
       </div>
       <div class="title">
         <h2><a class="main-title">Amara Resort & SPA</a></h2>
@@ -140,15 +136,15 @@
         </div>
       </div>
       <div class="aside-rating">
-          <img src="img/icon-4-stars.svg" alt="4 звезды" width="91px" height="17px"><!--★★★★-->
-          <p class="rating">
-            Рейтинг: 8,5
-          </p>
+        <img src="img/icon-4-stars.svg" alt="4 звезды" width="91" height="17">
+        <p class="rating">
+          Рейтинг: 8,5
+        </p>
       </div>
     </li>
     <li class="hotel-card">
       <div class="picture">
-        <img src="img/list-desertquailinn.png" alt="Вид мотеля Desert-Quail-Inn" width="135px" height="90px">
+        <img src="img/list-desertquailinn.png" alt="Вид мотеля Desert-Quail-Inn" width="135" height="90">
       </div>
       <div class="title">
         <h2><a class="main-title">Desert Quail INN</a></h2>
@@ -166,16 +162,16 @@
         </div>
       </div>
       <div class="aside-rating">
-          <img src="img/icon-3-stars.svg" alt="3 звезды" width="66px" height="17px"><!--★★★-->
-          <p class="rating">
-            Рейтинг: 8,9
-          </p>
+        <img src="img/icon-3-stars.svg" alt="3 звезды" width="66" height="17">
+        <p class="rating">
+          Рейтинг: 8,9
+        </p>
       </div>
     </li>
     <li class="hotel-card">
       <div class="picture">
-        <img src="img/list-villasatpocodiablo.png" alt="Вид аппартаментов Villas at Poco Diablo" width="135px"
-             height="90px">
+        <img src="img/list-villasatpocodiablo.png" alt="Вид аппартаментов Villas at Poco Diablo" width="135"
+             height="90">
       </div>
       <div class="title">
         <h2><a class="main-title">Villas At Poco Diablo</a></h2>
@@ -193,10 +189,10 @@
         </div>
       </div>
       <div class="aside-rating">
-          <img src="img/icon-2-stars.svg" alt="star" width="42px" height="17px"><!--★★-->
-          <p class="rating">
-            Рейтинг: 9,2
-          </p>
+        <img src="img/icon-2-stars.svg" alt="star" width="42" height="17">
+        <p class="rating">
+          Рейтинг: 9,2
+        </p>
       </div>
     </li>
   </ul>
@@ -209,22 +205,36 @@
   <section class="footer-social">
     <ul class="social-buttons">
       <li>
-        <a class="twitter" href="https://www.twitter.com">
+        <a class="twitter" href="https://www.twitter.com" aria-label="Твиттер">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z"
+              fill="white"/>
+          </svg>
         </a>
       </li>
       <li>
-        <a class="fb" href="https://www.facebook.com">
+        <a class="fb" href="https://www.facebook.com" aria-label="Фейсбук">
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
         </a>
       </li>
       <li>
-        <a class="youtube" href="https://www.youtube.com">
+        <a class="youtube" href="https://www.youtube.com" aria-label="Ютуб">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                  fill="white"/>
+          </svg>
         </a>
       </li>
     </ul>
   </section>
   <section class="copyright">
     <p>website by</p>
-    <a class="htmlacademy" href="https://www.htmlacademy.ru"></a>
+    <a class="htmlacademy" href="https://www.htmlacademy.ru">
+    </a>
   </section>
 </footer>
 </body>

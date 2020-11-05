@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="main-header">
@@ -25,17 +25,18 @@
     </ul>
   </nav>
   <a class="main-header-logo">
-    <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="138px" height="70px"><!--LOGO-->
+    <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
   </a>
 </header>
 <main class="wrapper">
+  <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
   <div class="greetings">
-    <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona" width="456.65px" height="350.88px">
+    <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona" width="456" height="350">
   </div>
-  <h1 class="main-reason">
+  <p class="main-reason">
     Седона — небольшой городок в Аризоне,
     заслуживающий большего!
-  </h1>
+  </p>
   <section class="features">
     <h2 class="reasons">
       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -50,7 +51,7 @@
             течёт своя жизнь
           </p>
         </div>
-        <img class="sedona-view" src="img/sedona-view.jpg" alt="вид седоны" width="800px" height="256px">
+        <img class="sedona-view" src="img/sedona-view.jpg" alt="вид седоны" width="800" height="256">
         <ul class="bonus-list">
           <li class="bonus-feature housing">
             <h4>Жильё</h4>
@@ -76,7 +77,7 @@
         </ul>
       </li>
       <li class="main-feature second">
-        <img class="devil-bridge" src="img/devil-bridge.jpg" alt="вид на мост дьявола" width="800px" height="256px">
+        <img class="devil-bridge" src="img/devil-bridge.jpg" alt="вид на мост дьявола" width="800" height="256">
         <div class="feature-highlighted">
           <h3>Там есть<br>мост дьявола</h3>
           <p class="number">— №2 —</p>
@@ -86,7 +87,7 @@
           </p>
         </div>
       </li>
-      <li class="last-feature third">
+      <li class="last-feature">
         <h3>Небольшая площадь</h3>
         <p class="number">— №3 —</p>
         <p class="description">
@@ -94,7 +95,7 @@
           находятся очень близко
         </p>
       </li>
-      <li class="last-feature fourth">
+      <li class="last-feature">
         <h3>Красивая дорога</h3>
         <p class="number">— №4 —</p>
         <p class="description">
@@ -102,63 +103,56 @@
           не скучно!
         </p>
       </li>
-      <li class="last-feature fifth">
+      <li class="last-feature">
         <h3>Мало туристов</h3>
         <p class="number">— №5 —</p>
         <p class="description">
           Большинство едет в Гранд Каньон
-          и толпится там
+          и&nbsp;толпится там
         </p>
       </li>
     </ul>
   </section>
   <section class="searching-block">
-    <div class="wrapper">
-      <h1>Заинтересовались?</h1>
-      <p>
-        Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в Седоне
-      </p>
-    </div>
-    <div class="whole-pop-up">
-      <a class="button button-search" href="">
-        <b>Поиск гостиницы в Седоне</b>
-      </a>
-      <form class="pop-up">
-        <label class="arrival-date"><p>Дата заезда:</p>
-          <input class="date" name="date" placeholder="24 Апреля 2017">
-          <button class="calendar"></button>
-        </label>
-        <label class="departure-date"><p>Дата выезда:</p>
-          <input class="date" name="date" placeholder="4 Июля 2017">
-          <button class="calendar"></button>
-        </label>
-        <div class="folks">
-          <label><p>Взрослые:</p>
-            <button class="minus"></button>
-            <input class="amount" name="amount" placeholder="2">
-            <button class="plus"></button>
-          </label>
-          <label class="children"><p>Дети:</p>
-            <button class="minus"></button>
-            <input class="amount" placeholder="0">
-            <button class="plus"></button>
-          </label>
-        </div>
-        <div>
-          <button type="submit" class="pop-up-button"><b>Найти</b></button>
-        </div>
-      </form>
-    </div>
+    <h2>Заинтересовались?</h2>
+    <p>
+      Укажите предполагаемые даты поездки,<br>
+      и мы покажем вам лучшие предложения гостиниц в Седоне
+    </p>
+    <a class="button button-search" href="">
+      <b>Поиск гостиницы в Седоне</b>
+    </a>
+    <form class="pop-up">
+      <div class="wrapper">
+        <label for="arrival-date">Дата заезда:</label>
+          <input id="arrival-date" type="text" class="date" name="date" placeholder="24 Апреля 2017">
+        <button class="calendar"></button>
+      </div>
+      <div class="wrapper">
+      <label for="departure-date">Дата выезда:</label>
+        <input id="departure-date" class="date" name="date" placeholder="4 Июля 2017">
+        <button class="calendar"></button>
+      </div>
+      <div class="folks">
+        <label for="adults">Взрослые:</label>
+        <button class="minus"></button>
+        <input id="adults" class="amount" name="amount" placeholder="2">
+        <button class="plus"></button>
+        <label for="children" class="children">Дети:</label>
+        <button class="minus"></button>
+        <input id="children" class="amount" placeholder="0">
+        <button class="plus"></button>
+      </div>
+      <div>
+        <button type="submit" class="pop-up-button"><b>Найти</b></button>
+      </div>
+    </form>
   </section>
   <section class="map">
-    <!--<img src="img/map.png" width="1199px" height="593px" alt="map">-->
-    <map>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486807.6361655306!2d-112.04009329266346!3d34.83449607893822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1604348601240!5m2!1sru!2sru"
-        width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" title="Седона, Аризона, США"
-        tabindex="0"></iframe>
-    </map>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486807.6361655306!2d-112.04009329266346!3d34.83449607893822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1604348601240!5m2!1sru!2sru"
+      width="1200" height="594" style="border:0;" allowfullscreen="" title="Седона, Аризона, США"
+      tabindex="0"></iframe>
   </section>
 </main>
 <footer class="main-footer page-footer">
@@ -170,14 +164,27 @@
     <ul class="social-buttons">
       <li>
         <a class="twitter" href="https://www.twitter.com" aria-label="Твиттер">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z"
+              fill="white"/>
+          </svg>
         </a>
       </li>
       <li>
         <a class="fb" href="https://www.facebook.com" aria-label="Фейсбук">
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
         </a>
       </li>
       <li>
         <a class="youtube" href="https://www.youtube.com" aria-label="Ютуб">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                  fill="white"/>
+          </svg>
         </a>
       </li>
     </ul>
