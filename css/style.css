@@ -314,7 +314,7 @@ a {
 
 .searching-block .wrapper {
   display: flex;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .searching-block h2 {
@@ -434,6 +434,18 @@ a {
   background-color: var(--basic-background);
   border: none;
   padding: 6px 0;
+  cursor: pointer;
+}
+
+.folks input:hover {
+  background-color: #EBEBEB;
+}
+
+.folks input:focus {
+  background-color: var(--basic-white);
+  width: 34px;
+  padding: 4px 0;
+  border: 2px solid #E5E5E5;
 }
 
 .folks .children {
@@ -442,6 +454,10 @@ a {
 
 .folks button {
   cursor: pointer;
+}
+
+.folks button:nth-child(3n) {
+  margin-left: 27px;
 }
 
 .folks .plus {
@@ -1068,11 +1084,9 @@ a .hotels-visited {
   background-color: var(--blue-hover);
 }
 
-.social-buttons a:active {
+.social-buttons a:active,
+.social-buttons a:active path {
   background-color: var(--blue-active);
-}
-
-.social-buttons a path:active {
   fill: rgba(255, 255, 255, 0.3);
 }
 
