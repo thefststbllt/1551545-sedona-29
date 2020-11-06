@@ -364,12 +364,12 @@ a {
   text-align: start;
   padding: 6px 0;
   width: 112px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .pop-up input {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 26px;
 }
@@ -446,6 +446,9 @@ a {
 
 .folks button {
   cursor: pointer;
+  width: 38px;
+  border: none;
+  font-size: 0;
 }
 
 .folks button:nth-child(3n) {
@@ -453,8 +456,6 @@ a {
 }
 
 .folks .plus {
-  width: 38px;
-  border: none;
   background-color: var(--basic-background);
   background-image: url("../img/icon-plus.svg");
   background-size: 11px 11px;
@@ -471,8 +472,6 @@ a {
 }
 
 .folks .minus {
-  width: 38px;
-  border: none;
   margin-left: 40px;
   background-color: var(--basic-background);
   background-image: url("../img/icon-minus.svg");
@@ -497,6 +496,7 @@ a {
 
 .pop-up-button {
   font-style: normal;
+  font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
   line-height: 26px;
@@ -662,6 +662,10 @@ a {
   position: relative;
   padding-top: 20px;
   margin-bottom: 33px;
+}
+
+.range-controls div {
+  font-size: 0;
 }
 
 .range-controls .scale {
@@ -960,8 +964,6 @@ a {
 }
 
 .detail {
-  display: flex;
-  justify-content: center;
   width: 110px;
   font-size: 14px;
   line-height: 21px;
@@ -976,6 +978,7 @@ a {
 
 .detail:active {
   background-color: var(--blue-active);
+  color: var(--blured-white);
 }
 
 .detail b:active {
@@ -983,8 +986,6 @@ a {
 }
 
 .booking {
-  display: flex;
-  justify-content: center;
   width: 142px;
   font-size: 14px;
   line-height: 21px;
@@ -999,6 +1000,7 @@ a {
 
 .booking:active {
   background-color: var(--brown-active);
+  color: var(--blured-white);
 }
 
 .booking b:active {
@@ -1106,6 +1108,7 @@ a {
   height: 41px;
   margin-bottom: 5px;
   margin-left: 8px;
+  font-size: 0;
   background-image: url("../img/logo-htmlacademy.svg");
   background-size: 115px 41px;
   background-repeat: no-repeat;
