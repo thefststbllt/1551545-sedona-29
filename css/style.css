@@ -539,9 +539,6 @@ a {
   opacity: 1;
 }
 
-
-/* Фильтр */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -710,7 +707,6 @@ a {
   padding: 5px 36px 6px 35px;
   margin-right: 10px;
   cursor: pointer;
-
 }
 
 .filter-button:hover,
@@ -1063,7 +1059,6 @@ a {
 }
 
 .footer-social {
-
   display: flex;
   margin-left: 27px;
 }
