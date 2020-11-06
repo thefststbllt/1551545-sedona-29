@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -33,11 +33,11 @@
   <div class="greetings">
     <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona" width="456" height="350">
   </div>
-  <p class="main-reason">
-    Седона — небольшой городок в Аризоне,
-    заслуживающий большего!
-  </p>
   <section class="features">
+    <p class="main-reason">
+      Седона — небольшой городок в Аризоне,
+      заслуживающий большего!
+    </p>
     <h2 class="reasons">
       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
     </h2>
@@ -119,19 +119,17 @@
       Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне
     </p>
-    <a class="button button-search" href="">
-      <b>Поиск гостиницы в Седоне</b>
-    </a>
+    <a class="button button-search">Поиск гостиницы в Седоне</a>
     <form class="pop-up">
       <div class="wrapper">
         <label for="arrival-date">Дата заезда:</label>
-          <input id="arrival-date" type="text" class="date" name="date" placeholder="24 Апреля 2017">
-        <button class="calendar"></button>
+        <input id="arrival-date" type="text" class="date" name="date" placeholder="24 Апреля 2017">
+        <button class="calendar">Календарь</button>
       </div>
       <div class="wrapper">
-      <label for="departure-date">Дата выезда:</label>
+        <label for="departure-date">Дата выезда:</label>
         <input id="departure-date" class="date" name="date" placeholder="4 Июля 2017">
-        <button class="calendar"></button>
+        <button class="calendar">Календарь</button>
       </div>
       <div class="folks">
         <label for="adults">Взрослые:</label>
@@ -191,7 +189,7 @@
   </section>
   <section class="copyright">
     <p>website by</p>
-    <a class="htmlacademy" href="https://www.htmlacademy.ru">
+    <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html-academy">
     </a>
   </section>
 </footer>
