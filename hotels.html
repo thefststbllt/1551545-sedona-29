@@ -30,36 +30,36 @@
 </header>
 <main>
   <section>
-    <form class="filter" action="https://echo.htmlacademy.ru">
+    <form class="filter" action="https://echo.htmlacademy.ru" target="_blank">
       <div class="selection">
         <h3>Инфраструктура:</h3>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-pool" name="Pool" type="checkbox" checked>
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-pool" name="Pool" type="checkbox" checked>
           <label for="filter-for-pool">Бассеин</label>
         </div>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-parking" name="Parking" type="checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-parking" name="Parking" type="checkbox">
           <label for="filter-for-parking">Парковка</label>
         </div>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-wifi" name="Wi-Fi" type="checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-wifi" name="Wi-Fi" type="checkbox">
           <label for="filter-for-wifi">Wi-Fi</label>
         </div>
       </div>
       <div class="selection">
         <h3>Тип жилья:</h3>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-hotel" name="Hotel" type="checkbox"
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-hotel" name="Hotel" type="checkbox"
                  checked>
           <label for="filter-for-hotel">Гостиница</label>
         </div>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-motel" name="Motel" type="checkbox"
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-motel" name="Motel" type="checkbox"
                  checked>
           <label for="filter-for-motel">Мотель</label>
         </div>
         <div class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox" id="filter-for-apartment" name="Apartment"
+          <input class="visually-hidden filter-input-checkbox filter-input" id="filter-for-apartment" name="Apartment"
                  type="checkbox" checked>
           <label for="filter-for-apartment">Апартаменты</label>
         </div>
@@ -89,7 +89,7 @@
     </form>
     <div class="sort-stripe">
       <div class="sort-bar">
-        <b>Найдено: 3</b>
+        <span>Найдено: 3</span>
         <p>Сортировка:</p>
         <p>
           <a class="sorting-by active" href="">По цене</a>
@@ -102,12 +102,12 @@
         </p>
       </div>
       <div class="arrows">
-        <a class="dir-up" href="">
+        <a class="dir-up" aria-label="от меньшего к большему" href="">
           <svg width="11" height="10" viewBox="0 0 11 10">
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
           </svg>
         </a>
-        <a class="dir-down active" href="">
+        <a class="dir-down active" aria-label="от большего к меньшему" href="">
           <svg width="11" height="10" viewBox="0 0 11 10">
             <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
           </svg>

@@ -57,14 +57,13 @@
             <h4>Жильё</h4>
             <p>
               Рекомендуем пожить в настоящем
-              мотеле, всё как в кино!
+              мотеле,&nbsp;всё как в кино!
             </p>
           </li>
           <li class="bonus-feature food">
             <h4>Еда</h4>
             <p>
-              Всегда заказывайте фирменный бургер,
-              вы не разочаруетесь!
+              Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
             </p>
           </li>
           <li class="bonus-feature souvenirs">
@@ -83,7 +82,7 @@
           <p class="number">— №2 —</p>
           <p>
             Да, по нему можно пройти! Если конечно
-            вы осмелитесь
+            вы&nbsp;осмелитесь
           </p>
         </div>
       </li>
@@ -92,7 +91,7 @@
         <p class="number">— №3 —</p>
         <p class="description">
           Все достопримечательности
-          находятся очень близко
+          находятся&nbsp;очень близко
         </p>
       </li>
       <li class="last-feature">
@@ -100,7 +99,7 @@
         <p class="number">— №4 —</p>
         <p class="description">
           Ехать в Седону из Лас-Вегаса совсем
-          не скучно!
+          не&nbsp;скучно!
         </p>
       </li>
       <li class="last-feature">
@@ -114,32 +113,34 @@
     </ul>
   </section>
   <section class="searching-block">
-    <h2>Заинтересовались?</h2>
-    <p>
-      Укажите предполагаемые даты поездки,<br>
-      и мы покажем вам лучшие предложения гостиниц в Седоне
-    </p>
-    <a class="button button-search" href="hotel-searching.html">Поиск гостиницы в Седоне</a>
-    <form class="pop-up">
+    <div class="anti-pop-up">
+      <h2>Заинтересовались?</h2>
+      <p>
+        Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <a class="button button-search" href="hotel-searching.html">Поиск гостиницы в Седоне</a>
+    </div>
+    <form class="pop-up modal-show">
       <div class="wrapper">
         <label for="arrival-date">Дата заезда:</label>
-        <input id="arrival-date" type="text" class="date" name="date" placeholder="24 Апреля 2017">
-        <button class="calendar">Календарь</button>
+        <input id="arrival-date" type="text" class="date" name="date" placeholder="24 Апреля 2017" required>
+        <button type="button" class="calendar">Календарь</button>
       </div>
       <div class="wrapper">
         <label for="departure-date">Дата выезда:</label>
-        <input id="departure-date" class="date" name="date" placeholder="4 Июля 2017">
-        <button class="calendar">Календарь</button>
+        <input id="departure-date" class="date" name="date" placeholder="4 Июля 2017" required>
+        <button type="button" class="calendar">Календарь</button>
       </div>
       <div class="folks">
         <label for="adults">Взрослые:</label>
-        <button class="minus">Минус</button>
-        <input id="adults" class="amount" name="amount" placeholder="2">
-        <button class="plus">Плюс</button>
+        <button type="button" class="minus">Минус</button>
+        <input id="adults" class="amount" name="amount" placeholder="2" required>
+        <button type="button" class="plus">Плюс</button>
         <label for="children" class="children">Дети:</label>
-        <button class="minus">Минус</button>
-        <input id="children" class="amount" placeholder="0">
-        <button class="plus">Плюс</button>
+        <button type="button" class="minus">Минус</button>
+        <input id="children" class="amount" placeholder="0" required>
+        <button type="button" class="plus">Плюс</button>
       </div>
       <div>
         <button type="submit" class="pop-up-button">Найти</button>
@@ -192,5 +193,6 @@
     <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
   </section>
 </footer>
+<script src="js/pop-up.min.js"></script>
 </body>
 </html>
